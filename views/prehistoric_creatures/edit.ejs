@@ -1,0 +1,10 @@
+<h1>Edit <%= creature.type %></h1>
+<form action="/prehistoric_creatures/edit/<%= id %>" method="POST">
+    <label for="creatureType">Type</label>
+    <input type="text" name="type" id="creatureType" value="<%= creature.type %>">
+
+    <label for="creatureImg">Image Url</label>
+    <input type="text" name="img_url" id="creatureImg" value="<%= creature.img_url %>">
+
+    <input type="submit">
+</form>

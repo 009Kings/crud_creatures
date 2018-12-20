@@ -1,0 +1,11 @@
+<h1>Edit <%= dino.name %></h1>
+<form action="/dinosaurs/edit/<%= id %>" method="POST">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name" value=<%= dino.name %>>
+
+
+    <label for="dinoType">Type</label>
+    <input type="text" name="type" id="dinoType" value=<%= dino.type %>>
+
+    <input type="submit">
+</form>
